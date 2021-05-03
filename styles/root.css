@@ -1,0 +1,14 @@
+:root {
+    --footer-color: #3742fa;
+    --header-color: #2f3542;
+    --bg-main: #70a1ff;
+    --card-bg-color: #3742fa;
+    --shadow: #747d8c;
+    --text-color: #57606f;
+    --text-yellow: #eccc68;
+    --hr-color: ##f1f2f6;
+    --hover-color: #ffa502;
+    --hover-bg-color: #3742fa;
+    --nav-item-bg-color: #1e90ff;
+    --table-text-color: #7bed9f;
+}
