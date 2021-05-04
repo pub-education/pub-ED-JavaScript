@@ -11,7 +11,6 @@ function start() {
     let timer = setInterval(() => {
         lexiconRotation();
     }, 3000);
-    daysToXmas();
 }
 function resetFields() {
     let items = document.getElementsByTagName('input');
@@ -20,6 +19,7 @@ function resetFields() {
         items[i].value = "";
     }
     Helper.setValue("closeTo100", "");
+    daysToXmas();
 }
 
 function randomInt(id) {
@@ -86,7 +86,7 @@ function century(data) {
     if (ok) {
         res = "The numbers are equal.";
     }
-    if (!ok && Math.abs(100 - num1) > Math.abs(100 - num2)) {
+    else if (!ok && Math.abs(100 - num1) > Math.abs(100 - num2)) {
         res = `The second number ${num2} is closer to 100.`;
     }
     else {

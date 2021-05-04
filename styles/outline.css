@@ -16,7 +16,7 @@ body {
     /*important to footer placement*/
     position: relative;
     top: 0px;
-    height: 100%;
+    min-height: 100%;
     width: 100%;
     background-color: var(--bg-main);
 }
