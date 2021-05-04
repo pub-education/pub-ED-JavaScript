@@ -1,53 +1,32 @@
 html {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-weight: lighter;
-    letter-spacing: 0.3px;
     color: var(--text-color);
     font-size: 1rem;
 }
 
 body {
-    min-height: 100vh;
-    min-width: 100vw;
-    overflow-y: auto;
-    overflow-x: hidden;
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--bg-color);
 }
 
-main {
-    height: 80%;
-    max-height: calc(100% - 60px);
-}
+
 
 .page-wrapper {
     /*important to footer placement*/
     position: relative;
     top: 0px;
-    min-height: 100vh;
+    height: 100%;
     width: 100%;
     background-color: var(--bg-main);
 }
 
 .page-content {
     height: calc(100% - 70px);
-    width: clamp(50%, 100%, 100%);
-    padding-left: 10px;
-    padding-right: 10px;
+    width: 100%;
     padding-bottom: 70px;
-}
-
-@media screen and (max-width:640px) {
-    header>h1 {
-        font-size: 2.5rem;
-    }
-}
-
-@media screen and (max-width:420px) {
-    header>h1 {
-        font-size: 1.6rem;
-    }
-
-    .page-content {
-        padding-left: 5px;
-        padding-right: 5px;
-    }
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: transparent;
 }

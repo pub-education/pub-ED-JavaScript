@@ -1,0 +1,85 @@
+@keyframes rotation1 {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    67% {
+        transform: rotate(360deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.card {
+    padding: 15px;
+    margin-top: 25px;
+    background-color: var(--card-bg-color);
+    height: max-content;
+    box-shadow: 2px 2px 2px 2px var(--shadow);
+    border-radius: 8px;
+}
+
+.card::before,
+header {
+    color: var(--card-header-2-color);
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.card input,
+.card textarea {
+    border: none;
+    background-color: transparent;
+    box-shadow: 1px 1px 1px 1px var(--shadow);
+    color: var(--text-color);
+    text-align: center;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.card p {}
+
+.rotation::before {
+    content: "Rotating Lexicon";
+}
+
+#rotator {
+    animation: rotation1 infinite 3000ms ease-in;
+}
+
+.btnHolder {
+    width: 100%;
+    text-align: right;
+}
+
+.btnClass {
+    margin-top: 0.5rem;
+    padding: 5px;
+    border-radius: 8px;
+    background-color: var(--bg-color);
+}
+
+
+.itemsAlignRight {
+    text-align: right;
+    padding-right: 0.3rem;
+}
+
+.random-integer::before {
+    content: "Random Integer";
+    text-align: center;
+}
+
+.daysToXmas>input {
+    text-align: center;
+}
+
+.daysToXmas::before {
+    content: "Days to X-mas";
+}
+
+.somePy::before {
+    content: "To Py or not to Py";
+}
